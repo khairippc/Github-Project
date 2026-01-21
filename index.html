@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Tailwind + Alpine</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg" x-data="{ count: 0 }">
+        <h1 class="text-2xl font-bold mb-4 text-blue-600">Vite + Tailwind + Alpine</h1>
+        <p class="mb-4 text-gray-700">This is a basic skeleton setup.</p>
+        <div class="flex items-center gap-4">
+          <button 
+            @click="count++" 
+            class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+          >
+            Increment
+          </button>
+          <span class="text-xl font-mono" x-text="count"></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
